@@ -155,7 +155,7 @@ extension IDProperty: AnyDatabaseProperty {
 
     public func output(from output: DatabaseOutput) throws {
         self.exists = true
-        self.cachedOutput = output
+        // self.cachedOutput = output
         try self.field.output(from: output)
     }
 }
